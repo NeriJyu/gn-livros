@@ -1,42 +1,42 @@
-# CRUD livros usando o Spring Webflux
+# 📚 CRUD Books using Spring Webflux
 
-## G*uia de Instalação do MongoDB usando Docker*
+## 🐳 *MongoDB Installation Guide using Docker*
 
-### Visão Geral
+### Overview 🧐
 
-Este guia irá orientá-lo pelo processo de configuração do MongoDB usando o Docker, uma plataforma popular de contêineres. Ao seguir estes passos, você poderá implantar uma instância do MongoDB com facilidade.
+This guide will walk you through the process of setting up MongoDB using Docker, a popular containerization platform. By following these steps, you will be able to deploy a MongoDB instance with ease.
 
-#### Pré-requisitos
+#### Prerequisites ✅
 
-Antes de começar, certifique-se de ter o Docker instalado em sua máquina. Se você ainda não o tiver instalado, pode baixar e instalar a partir do [site oficial do Docker](https://www.docker.com/get-started).
+Before you begin, ensure that you have Docker installed on your machine. If you haven't installed it yet, you can download and install it from the [official Docker website](https://www.docker.com/get-started).
 
-### Passos de Instalação
+### Installation Steps 👇
 
-#### Passo 1: Baixar a Imagem do Docker do MongoDB
+#### Step 1: Download the MongoDB Docker Image 📥
 
-Abra seu terminal e execute o seguinte comando para baixar a imagem oficial do Docker do MongoDB:
+Open your terminal and run the following command to download the official MongoDB Docker image:
 
 ```bash
 sudo docker pull mongo
 ```
 
-#### Passo 2: Executar o Contêiner do MongoDB
+#### Step 2: Run the MongoDB Container ▶️
 
 ```bash
 sudo docker run -d -p 27017:27017 --name my-reactive-mongo-container mongo
 ```
 
-Este comando irá:
+This command will:
 
- - -d: Executar o contêiner em segundo plano (modo desanexado).
-- -p 27017:27017: Mapear a porta local 27017 para a porta 27017 do contêiner.
-- --name my-reactive-mongo-container: Atribuir um nome ao contêiner para referência fácil.
-- mongo: Nome da imagem do Docker.
+ - -d: Run the container in the background (detached mode).
+- -p 27017:27017: Map the local port 27017 to the container's port 27017.
+- --name my-reactive-mongo-container: Assign a name to the container for easy reference.
+- mongo: Name of the Docker image.
 
-#### Passo 3: Conectar com o MongoDB Compass
+#### Step 3: Connect with MongoDB Compass 🧭
 
-Agora que seu contêiner MongoDB está em execução, você pode usar o MongoDB Compass, uma interface gráfica de usuário para o MongoDB, para interagir com o banco de dados.
+Now that your MongoDB container is running, you can use MongoDB Compass, a graphical user interface for MongoDB, to interact with your database.
 
-Instale o MongoDB Compass em sua máquina a partir do [site oficial](https://www.mongodb.com/try/download/compass).
+Install MongoDB Compass on your machine from the [official website](https://www.mongodb.com/try/download/compass).
 
-Abra o MongoDB Compass e conecte-se ao servidor MongoDB em _**mongodb://localhost:27017**_
+Open MongoDB Compass and connect to the MongoDB server at _**mongodb://localhost:27017**_
